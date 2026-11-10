@@ -1,0 +1,533 @@
+{
+  "ascend": [
+    {
+      "index": 1,
+      "tensor": "/model.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 2,
+      "tensor": "/model.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 3,
+      "tensor": "/model.2/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.2/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 4,
+      "tensor": "/model.2/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.2/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 5,
+      "tensor": "/model.2/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.2/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 6,
+      "tensor": "/model.2/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.2/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 7,
+      "tensor": "/model.3/conv/Conv_quant_dequant_output",
+      "conv": "/model.3/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 8,
+      "tensor": "/model.4/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.4/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 9,
+      "tensor": "/model.4/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.4/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 10,
+      "tensor": "/model.4/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.4/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 11,
+      "tensor": "/model.4/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.4/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 12,
+      "tensor": "/model.5/conv/Conv_quant_dequant_output",
+      "conv": "/model.5/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 13,
+      "tensor": "/model.6/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 14,
+      "tensor": "/model.6/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 15,
+      "tensor": "/model.6/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 16,
+      "tensor": "/model.6/m.0/m/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/m.0/m/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 17,
+      "tensor": "/model.6/m.0/m/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/m.0/m/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 18,
+      "tensor": "/model.6/m.0/m/m.1/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/m.0/m/m.1/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 19,
+      "tensor": "/model.6/m.0/m/m.1/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/m.0/m/m.1/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 20,
+      "tensor": "/model.6/m.0/cv3/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/m.0/cv3/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 21,
+      "tensor": "/model.6/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.6/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 22,
+      "tensor": "/model.7/conv/Conv_quant_dequant_output",
+      "conv": "/model.7/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 23,
+      "tensor": "/model.8/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 24,
+      "tensor": "/model.8/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 25,
+      "tensor": "/model.8/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 26,
+      "tensor": "/model.8/m.0/m/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/m.0/m/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 27,
+      "tensor": "/model.8/m.0/m/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/m.0/m/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 28,
+      "tensor": "/model.8/m.0/m/m.1/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/m.0/m/m.1/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 29,
+      "tensor": "/model.8/m.0/m/m.1/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/m.0/m/m.1/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 30,
+      "tensor": "/model.8/m.0/cv3/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/m.0/cv3/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 31,
+      "tensor": "/model.8/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.8/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 32,
+      "tensor": "/model.9/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.9/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 33,
+      "tensor": "/model.9/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.9/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 34,
+      "tensor": "/model.10/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.10/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 35,
+      "tensor": "/model.10/m/m.0/attn/qkv/conv/Conv_quant_dequant_output",
+      "conv": "/model.10/m/m.0/attn/qkv/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 36,
+      "tensor": "/model.10/m/m.0/attn/pe/conv/Conv_quant_dequant_output",
+      "conv": "/model.10/m/m.0/attn/pe/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 37,
+      "tensor": "/model.10/m/m.0/attn/proj/conv/Conv_quant_dequant_output",
+      "conv": "/model.10/m/m.0/attn/proj/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 38,
+      "tensor": "/model.10/m/m.0/ffn/ffn.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.10/m/m.0/ffn/ffn.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 39,
+      "tensor": "/model.10/m/m.0/ffn/ffn.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.10/m/m.0/ffn/ffn.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 40,
+      "tensor": "/model.10/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.10/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 41,
+      "tensor": "/model.13/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.13/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 42,
+      "tensor": "/model.13/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.13/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 43,
+      "tensor": "/model.13/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.13/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 44,
+      "tensor": "/model.13/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.13/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 45,
+      "tensor": "/model.16/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.16/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 46,
+      "tensor": "/model.16/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.16/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 47,
+      "tensor": "/model.16/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.16/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 48,
+      "tensor": "/model.16/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.16/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 49,
+      "tensor": "/model.17/conv/Conv_quant_dequant_output",
+      "conv": "/model.17/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 50,
+      "tensor": "/model.23/cv2.0/cv2.0.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.0/cv2.0.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 51,
+      "tensor": "/model.23/cv3.0/cv3.0.0/cv3.0.0.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.0/cv3.0.0/cv3.0.0.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 52,
+      "tensor": "/model.23/cv2.0/cv2.0.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.0/cv2.0.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 53,
+      "tensor": "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.0/cv3.0.0/cv3.0.0.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 54,
+      "tensor": "/model.19/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.19/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 55,
+      "tensor": "/model.23/cv2.0/cv2.0.2/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.0/cv2.0.2/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 56,
+      "tensor": "/model.23/cv3.0/cv3.0.1/cv3.0.1.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.0/cv3.0.1/cv3.0.1.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 57,
+      "tensor": "/model.19/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.19/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 58,
+      "tensor": "/model.23/cv3.0/cv3.0.1/cv3.0.1.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.0/cv3.0.1/cv3.0.1.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 59,
+      "tensor": "/model.19/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.19/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 60,
+      "tensor": "/model.23/cv3.0/cv3.0.2/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.0/cv3.0.2/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 61,
+      "tensor": "/model.19/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.19/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 62,
+      "tensor": "/model.20/conv/Conv_quant_dequant_output",
+      "conv": "/model.20/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 63,
+      "tensor": "/model.23/cv2.1/cv2.1.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.1/cv2.1.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 64,
+      "tensor": "/model.23/cv3.1/cv3.1.0/cv3.1.0.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.1/cv3.1.0/cv3.1.0.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 65,
+      "tensor": "/model.23/cv2.1/cv2.1.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.1/cv2.1.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 66,
+      "tensor": "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.1/cv3.1.0/cv3.1.0.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 67,
+      "tensor": "/model.22/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 68,
+      "tensor": "/model.23/cv2.1/cv2.1.2/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.1/cv2.1.2/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 69,
+      "tensor": "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.1/cv3.1.1/cv3.1.1.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 70,
+      "tensor": "/model.22/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 71,
+      "tensor": "/model.22/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 72,
+      "tensor": "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.1/cv3.1.1/cv3.1.1.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 73,
+      "tensor": "/model.22/m.0/m/m.0/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/m.0/m/m.0/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 74,
+      "tensor": "/model.23/cv3.1/cv3.1.2/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.1/cv3.1.2/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 75,
+      "tensor": "/model.22/m.0/m/m.0/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/m.0/m/m.0/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 76,
+      "tensor": "/model.22/m.0/m/m.1/cv1/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/m.0/m/m.1/cv1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 77,
+      "tensor": "/model.22/m.0/m/m.1/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/m.0/m/m.1/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 78,
+      "tensor": "/model.22/m.0/cv3/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/m.0/cv3/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 79,
+      "tensor": "/model.22/cv2/conv/Conv_quant_dequant_output",
+      "conv": "/model.22/cv2/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 80,
+      "tensor": "/model.23/cv2.2/cv2.2.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.2/cv2.2.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 81,
+      "tensor": "/model.23/cv3.2/cv3.2.0/cv3.2.0.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.2/cv3.2.0/cv3.2.0.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 82,
+      "tensor": "/model.23/cv2.2/cv2.2.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.2/cv2.2.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 83,
+      "tensor": "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.2/cv3.2.0/cv3.2.0.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 84,
+      "tensor": "/model.23/cv2.2/cv2.2.2/Conv_quant_dequant_output",
+      "conv": "/model.23/cv2.2/cv2.2.2/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 85,
+      "tensor": "/model.23/cv3.2/cv3.2.1/cv3.2.1.0/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.2/cv3.2.1/cv3.2.1.0/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 86,
+      "tensor": "/model.23/cv3.2/cv3.2.1/cv3.2.1.1/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.2/cv3.2.1/cv3.2.1.1/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 87,
+      "tensor": "/model.23/dfl/conv/Conv_quant_dequant_output",
+      "conv": "/model.23/dfl/conv/Conv_quant",
+      "op": "AscendDequant"
+    },
+    {
+      "index": 88,
+      "tensor": "/model.23/cv3.2/cv3.2.2/Conv_quant_dequant_output",
+      "conv": "/model.23/cv3.2/cv3.2.2/Conv_quant",
+      "op": "AscendDequant"
+    }
+  ],
+  "qdq": []
+}

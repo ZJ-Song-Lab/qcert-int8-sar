@@ -1,0 +1,61 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+*.so
+.Python
+
+# ---- 大二进制：权重 / 模型 / 依赖包（不入库）----
+*.om
+*.onnx
+*.weights
+*.pt
+*.pth
+*.part
+*.whl
+*.tar.gz
+*.tgz
+*.npz
+*.npy
+
+# ---- 数据集与原始转储（体积大，另行发布）----
+asc-sar/data/
+data/
+datasets/
+asc-sar/results/dumps/
+asc-sar/results/layers_*/
+asc-sar/results/om_info/
+asc-sar/weights/
+asc-sar/wheels/
+/results/
+
+# ---- LaTeX 中间产物 ----
+paper/latex/*.pdf
+
+# ---- 临时探针 ----
+code/experiments/_fp_neck_probe.onnx
+code/experiments/_fp_neck_scan.onnx
+
+# ---- LaTeX 构建产物 ----
+*.aux
+*.bbl
+*.blg
+*.out
+*.log
+elsarticle/*.pdf
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# 注意：code/results/ 下的全部 CSV/JSON/MD 实验结果**保留入库**，
+# 不在此排除。results 为论文核心交付物。

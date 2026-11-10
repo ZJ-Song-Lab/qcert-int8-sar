@@ -1,0 +1,7 @@
+{
+  "delta_s": 0.0007762214456100264,
+  "delta_sigma": 0.0078125,
+  "shift_bits": 16,
+  "domain": "raw logit = logit(prob)（OM 输出 prob 反变换）",
+  "note": "INT8 配置合同：AMCT scale 表三个输出头 Conv_quant_dequant 的 delta 按 cell 数加权几何平均（w=6400/1600/400）: d0=6.9389e-4 (cv3.0.2), d1=1.3239e-3 (cv3.1.2), d2=5.517e-4 (cv3.2.2)。注意：OM 实际输出端仍是 fp16 表示（probe4 实测），本 delta 是 conv 输出 int8 网格的声明步长，即判决层整数域合同；int8 的输出效应以传导误差形式存在（int8-fp16 raw logit 差 med=-0.266/MAD=0.406/p95=1.50）。dSigma 同 fp16（判决层不变）"
+}

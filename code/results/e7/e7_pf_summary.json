@@ -1,0 +1,130 @@
+{
+  "alpha": 0.001,
+  "n_frames": 232,
+  "bucket_counts": {
+    "rough": 35,
+    "medium": 174,
+    "calm": 23
+  },
+  "bucket_method": "SeaStateBucketer(kmeans k=3, features=cv/weibull_c/contrast)",
+  "t_model_ms": {
+    "fp16": 45.5,
+    "int8": 34.68
+  },
+  "power_w": 9.31,
+  "verdicts": {
+    "fp16": {
+      "cand_p90_rough_global": 42.000000000000014,
+      "cand_p90_rough_qcert": 9.0,
+      "ratio_global_over_qcert": 4.666666666666668,
+      "pass_cand": true,
+      "n_rough": 35
+    },
+    "int8": {
+      "cand_p90_rough_global": 44.40000000000001,
+      "cand_p90_rough_qcert": 9.0,
+      "ratio_global_over_qcert": 4.9333333333333345,
+      "pass_cand": true,
+      "n_rough": 35
+    }
+  },
+  "per_frame_pfa_stats": {
+    "global_fp16_all": {
+      "n": 232,
+      "mean": 0.0009995894909688014,
+      "median": 0.0008333333333333334,
+      "p90": 0.0019047619047619048,
+      "max": 0.007261904761904762,
+      "min": 0.0,
+      "frac_gt_2alpha": 0.09913793103448276,
+      "frac_gt_5alpha": 0.017241379310344827,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.29310344827586204
+    },
+    "global_fp16_rough": {
+      "n": 35,
+      "mean": 0.001561224489795918,
+      "median": 0.0009523809523809524,
+      "p90": 0.005000000000000002,
+      "max": 0.007261904761904762,
+      "min": 0.0,
+      "frac_gt_2alpha": 0.17142857142857143,
+      "frac_gt_5alpha": 0.11428571428571428,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.22857142857142856
+    },
+    "global_int8_all": {
+      "n": 232,
+      "mean": 0.0009985632183908046,
+      "median": 0.0007142857142857143,
+      "p90": 0.0022500000000000007,
+      "max": 0.007857142857142858,
+      "min": 0.0,
+      "frac_gt_2alpha": 0.11637931034482758,
+      "frac_gt_5alpha": 0.017241379310344827,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.3103448275862069
+    },
+    "global_int8_rough": {
+      "n": 35,
+      "mean": 0.0017040816326530613,
+      "median": 0.0009523809523809524,
+      "p90": 0.005285714285714288,
+      "max": 0.007857142857142858,
+      "min": 0.0,
+      "frac_gt_2alpha": 0.2571428571428571,
+      "frac_gt_5alpha": 0.11428571428571428,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.2571428571428571
+    },
+    "qcert_fp16_all": {
+      "n": 232,
+      "mean": 0.0010709154351395734,
+      "median": 0.0010714285714285715,
+      "p90": 0.0010714285714285715,
+      "max": 0.0010714285714285715,
+      "min": 0.0009523809523809524,
+      "frac_gt_2alpha": 0.0,
+      "frac_gt_5alpha": 0.0,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.0
+    },
+    "qcert_fp16_rough": {
+      "n": 35,
+      "mean": 0.0010714285714285715,
+      "median": 0.0010714285714285715,
+      "p90": 0.0010714285714285715,
+      "max": 0.0010714285714285715,
+      "min": 0.0010714285714285715,
+      "frac_gt_2alpha": 0.0,
+      "frac_gt_5alpha": 0.0,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.0
+    },
+    "qcert_int8_all": {
+      "n": 232,
+      "mean": 0.0010709154351395734,
+      "median": 0.0010714285714285715,
+      "p90": 0.0010714285714285715,
+      "max": 0.0010714285714285715,
+      "min": 0.0009523809523809524,
+      "frac_gt_2alpha": 0.0,
+      "frac_gt_5alpha": 0.0,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.0
+    },
+    "qcert_int8_rough": {
+      "n": 35,
+      "mean": 0.0010714285714285715,
+      "median": 0.0010714285714285715,
+      "p90": 0.0010714285714285715,
+      "max": 0.0010714285714285715,
+      "min": 0.0010714285714285715,
+      "frac_gt_2alpha": 0.0,
+      "frac_gt_5alpha": 0.0,
+      "frac_gt_10alpha": 0.0,
+      "frac_lt_half_alpha": 0.0
+    }
+  },
+  "note": "逐帧 P_fa：global=跨帧固定λ（池化分位），qcert=逐帧分位；违约定义为逐帧 P_fa > c·α"
+}

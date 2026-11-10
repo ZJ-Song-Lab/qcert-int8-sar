@@ -1,0 +1,89 @@
+\section{Related work}
+\label{sec:related}
+
+\subsection{SAR ship detection: a saturated accuracy race}
+\label{sec:rw-sar}
+
+SSDD (1160 images, RadarSat-2/TerraSAR-X/Sentinel-1 multi-sensor) \citep{ssdd} and HRSID (5604 images, 0.5--3 m resolution) \citep{hrsid} are the two mainstream benchmarks.
+Recent lightweight detectors push SSDD mAP50 to 96--99\%: AC-YOLO (YOLO11-based, 96.7\%) \citep{acyolo}, BESW-YOLO (YOLOv8n-based, 97.3\%) \citep{beswyolo}, LSD-DETR (97.3\%) \citep{lsddetr}, and LAMFDet (99.5\%) \citep{lamfdet}.
+Two facts must be stated plainly.
+First, \textbf{the accuracy race is saturated}.
+Second, \textbf{none of the deep-detection works reports a measured false-alarm rate} --- let alone ``the change of the false-alarm rate across quantization'' (the CFAR line takes $\Pfa$ as its design target, but see Section~\ref{sec:rw-cfar}: its contract rests on two premises this paper does not inherit, namely pixel-amplitude distributions and floating-point DSP).
+All thresholds of deep detection methods (0.25/0.5) are tuned hyperparameters without a calibration procedure; deployment numbers are GPU FPS and FLOPs only.
+This paper targets exactly these two facts: mAP is saturated and insensitive to false alarms, and the field needs a new metric.
+
+\subsection{Constant-false-alarm detection: from CFAR to learned CFAR}
+\label{sec:rw-cfar}
+
+Classic CFAR (CA/OS/GO/SO) \citep{cfarclassic} models pixel-domain thresholds against clutter amplitude distributions (K, G$^0$, Weibull), and is the origin of the ``false-alarm contract'' idea.
+But it rests on two assumptions this paper does \emph{not} inherit: \textbf{it models pixel amplitudes rather than deep-detector responses}, so discrimination is weak and the ``constant'' property collapses once the CFAR window is contaminated in near-shore or multi-target scenes; and \textbf{it works on floating-point or fixed-point DSP without ever asking ``is a quantized CFAR still CFAR?''}.
+CFARnet \citep{cfarnet} brings the CFAR idea into learned detectors by softly penalizing inconsistency of the score distribution under the null hypothesis in the loss, but inference still uses a fixed threshold, still in FP32, with no finite-sample guarantee.
+Our position: \textbf{not a return to CFAR, and not ``encouraging'' CFAR in the loss}, but turning the decision threshold into a provable statistic that holds in integer arithmetic --- inheriting the contract, discarding the distributional and floating-point assumptions.
+
+\subsection{Post-training quantization of detectors: accuracy in the mean, drift in the tail}
+\label{sec:rw-ptq}
+
+This is the closest neighbor of the present work.
+The state of PTQ for detection is that research almost exclusively targets mAP/AP: Inlier-Centric PTQ \citep{icptq} (ICLR 2026) points out that quantization error for detection is driven by ``hard backgrounds resembling target features (inliers)'', and designs calibration and reconstruction strategies accordingly --- yet \textbf{the acceptance metric is still mAP}; the official Vitis AI accuracy verification flow \citep{vitisai} requires the INT8-vs-floating-point mAP gap to be $\le$1\%, otherwise the calibration set is revised --- \textbf{the acceptance criterion of the whole ecosystem is mAP}; the QAT family trades retraining and annotations for mAP, which this paper does not adopt.
+
+Our cut in one sentence: \textbf{PTQ minimizes quantization error as a mean-level accuracy loss; this paper bounds it as a tail-level statistical drift.}
+mAP integrates over the full ranking, while $\Pfa=10^{-3}$ is the 99.9th percentile --- tail error is nearly invisible in mAP (the non-implication of Section~\ref{sec:method}, measured in Section~\ref{sec:e0}).
+We are not ``a better PTQ''; we \textbf{changed the quantity being optimized}.
+
+\subsection{INT8 portability: from ``measuring inconsistency'' to ``bounding and recovering''}
+\label{sec:rw-int8}
+
+Is INT8 Portable? \citep{int8portable} measured: FP32 is bit-consistent on 1000/1000 uses; INT8 sharing the same integer kernel is also 1000/1000; but \textbf{cross-kernel/cross-platform consistency is only 958--965/1000}.
+This shows INT8 non-portability is a fact rather than an engineering blemish --- ``calibrate the threshold under FP32, infer under INT8'' fails in principle.
+What it does not do: an \textbf{analytic bound} of the inconsistency on downstream statistics (especially tail quantiles); a decision rule that \textbf{recovers the contract} in the integer domain; and a \textbf{zero-data} mechanism that transports the threshold to a new configuration.
+This paper provides exactly these three (Proposition~\ref{prop:bound}, Eq.~\eqref{eq:int-decision}, Eq.~\eqref{eq:transport}), turning ``inconsistency'' from ``a reported percentage'' into ``a predictable, boundable, transportable quantity''.
+
+\subsection{Uncertainty and conformal prediction}
+\label{sec:rw-conformal}
+
+SeqCRC \citep{seqcrc} and related methods use \textbf{labeled calibration sets} to give coverage guarantees $P(\text{truth}\in\text{prediction set})\ge1-\delta$.
+Four differences: (i) the guarantee object (coverage/recall vs false alarm); (ii) label requirements (labeled calibration set vs zero-annotation clutter locations); (iii) the distribution source (held-out real samples vs generatable null distributions, whose sample size reaches $10^4$--$10^5$, so $\alpha$ can be smaller); (iv) \textbf{the model on which the guarantee acts} --- conformal guarantees act on the floating-point model at calibration time, whereas our guarantee acts on the \emph{deployed integer model}, and the two are separated by a quantization-error analysis (C1) that conformal methods do not have.
+To be fair, the mathematical tools (rank statistics, exchangeability) are of the same family, and we acknowledge this openly.
+
+\subsection{Edge/on-board deployment measurements: FPS only, no contract}
+\label{sec:rw-edge}
+
+GPU edge measurements exist: an embedded GPU with TensorRT mixed precision reaches 208 FPS at 640$\times$640 and 6.2~W \citep{jetson_sar} --- the title says ``quantization-aware'', but \textbf{only FPS and mAP are reported, not $\Pfa$}; an FPGA implements real-time Stripmap raw-data detection on orbit \citep{fpgasar}; and the Ascend ecosystem (official Ultralytics Ascend integration \citep{ultralytics_ascend}, AMCT, ATC \citep{amct_atc}) provides an ONNX$\to$OM toolchain.
+Two gaps remain: no work measures ``how much $\Pfa$ changed across quantization'', and no work measures the ``false-alarm rate $\to$ candidate count $\to$ post-processing tail latency'' coupling.
+Our C3 measurement groups (Sections~\ref{sec:e2}--\ref{sec:e7}) are designed to fill exactly these two gaps.
+
+\subsection{Summary: a four-column comparison}
+\label{sec:rw-summary}
+
+Table~\ref{tab:related} positions the related lines of work along four columns: \textcircled{1} whether the optimization target is mAP or tail quantiles; \textcircled{2} whether background/clutter distributions are explicitly modeled; \textcircled{3} whether the conclusions hold on fixed-point integer arithmetic; \textcircled{4} whether board-level measurements exist.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparison with related lines of work.
+\textcircled{1} optimization target: mAP vs tail quantile;
+\textcircled{2} explicit background/clutter modeling;
+\textcircled{3} conclusions valid on fixed-point integer arithmetic;
+\textcircled{4} board-level measurements.}
+\label{tab:related}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Line of work & \textcircled{1} & \textcircled{2} & \textcircled{3} & \textcircled{4} \\
+\midrule
+SAR detection SOTA (YOLO/DETR family) & mAP & \texttimes & \texttimes\ (never discussed) & \texttimes\ (GPU FPS only) \\
+PTQ for detection (Inlier-Centric PTQ etc.) & mAP & \texttriangleup\ (inlier bg, still for mAP) & \textcheckmark\ (on INT8) & \texttriangleup\ (mostly GPU/sim.) \\
+Is INT8 Portable? & --- (no detection metric) & \texttimes & \textcheckmark\ (measures consistency) & \textcheckmark\ (multi-platform) \\
+QAT family & mAP & \texttimes & \textcheckmark & \texttriangleup \\
+Classic CFAR (CA/OS/GO) & tail quantile ($\Pfa$) & \textcheckmark\ (pixel amplitude) & \texttimes\ (FP/DSP, no quantization) & \texttimes \\
+CFARnet & $\Pfa$ (soft penalty) & \texttriangleup & \texttimes\ (FP32) & \texttimes \\
+Conformal detection (SeqCRC) & coverage (not false alarm) & \texttimes & \texttimes\ (FP32 model) & \texttimes \\
+Cross-domain/TTA/backprop-free adaptation & mAP & \texttimes & \texttimes & \texttimes \\
+Edge SAR deployment (GPU/FPGA/Ascend) & mAP + FPS & \texttimes & \texttriangleup\ (runs, no contract) & \textcheckmark \\
+\midrule
+\textbf{This paper (QCert)} & \textbf{tail quantile ($\Pfa$)} & \textbf{\textcheckmark\ (zero-label null model, \emph{quantized})} & \textbf{\textcheckmark\ (by construction + analytic bound)} & \textbf{\textcheckmark\ (Atlas 200I DK measured)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+How to read the table: column~\textcircled{1} separates this paper from all PTQ/QAT/detection work; column~\textcircled{2} separates it from conformal and vanilla PTQ; \textbf{column~\textcircled{3} is the new column, and it is the column that makes this paper stop holding on a Jetson}; column~\textcircled{4} provides the uniqueness evidence.
+Four checkmarks are the only defense this paper needs.

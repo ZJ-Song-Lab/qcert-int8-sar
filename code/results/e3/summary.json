@@ -1,0 +1,11 @@
+{
+  "alpha": 0.001,
+  "n_scenes": 232,
+  "disagree_board": 0.0005808702791461412,
+  "disagree_ort": 0.0005854885057471265,
+  "R_board": 1.0008620689655172,
+  "R_ort": 1.0025862068965516,
+  "bit_exact_rate": 1.0,
+  "A1_holds": true,
+  "note": ""
+}

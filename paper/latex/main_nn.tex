@@ -1,0 +1,136 @@
+% Neural Networks (Elsevier) 投稿格式 —— elsarticle 模板
+% 编译：xelatex main_nn.tex（需运行两次以稳定交叉引用与目录）
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage[UTF8,fontset=windows]{ctex}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,array,calc,multirow}
+\usepackage{xcolor}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{hyperref}
+
+\graphicspath{{../figs/}}
+
+% pandoc 无编号表格（\LTcaptype=none）与 hyperref 兼容
+\newcounter{none}
+
+% 特殊符号路由：SimSun 覆盖的走 CJK 字体，其余走 Segoe UI Symbol
+% 希腊字母（α λ μ σ ε …）SimSun 完整支持
+\xeCJKDeclareCharClass{CJK}{"0370 -> "03FF, "2190 -> "2199, "2264, "2265,
+  "2260, "2248, "2208, "2460 -> "24FF, "2500 -> "257F, "25A0 -> "25FF}
+\usepackage{newunicodechar}
+\newfontfamily\symsymb{Segoe UI Symbol}
+\newunicodechar{⁰}{\textsuperscript{0}}
+% SimSun 缺 ⇒（U+21D2）与 −（U+2212），改走 Segoe UI Symbol
+\newunicodechar{⇒}{{\symsymb\char"21D2}}
+\newunicodechar{−}{{\symsymb\char"2212}}
+\newunicodechar{⚠}{{\symsymb\char"26A0}}
+\newunicodechar{✅}{{\symsymb\char"2705}}
+\newunicodechar{✓}{{\symsymb\char"2713}}
+\newunicodechar{✗}{{\symsymb\char"2717}}
+\newunicodechar{❌}{{\symsymb\char"274C}}
+\newunicodechar{️}{}
+
+% pandoc 生成的宏兜底
+\providecommand{\pandocbounded}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\journal{Neural Networks}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{QCert: Making False-Alarm Guarantees Survive Integer Quantization
+       for On-Board SAR Ship Detection}
+
+\author[inst1]{作者姓名（投稿时填写）}
+\affiliation[inst1]{organization={单位名称（投稿时填写）},
+                    city={城市}, postcode={邮编}, country={中国}}
+
+\begin{abstract}
+Deployable SAR ship detectors are calibrated in floating point but executed on
+fixed-point NPUs --- and the acceptance metric, mAP, is blind to the mismatch:
+mAP integrates over the full ranking, whereas the false-alarm rate
+$P_{fa}=10^{-3}$ lives at the 99.9th percentile, exactly the region that int8
+quantization perturbs through denominator granularity, accumulated rounding,
+and potential output saturation. We move the false-alarm contract into integer
+arithmetic. First, we derive a closed-form bound that propagates per-layer
+scale factors to $P_{fa}$, and show that for deployments with per-position null
+models the denominator of the decision statistic dominates --- a 5\%
+quantization error on the null-model scale inflates $P_{fa}$ by 1.6$\times$ at
+$\alpha=10^{-3}$; the bound is verified on all 12 error levels (our SSDD
+instance fixes the null scale, where the output-grid mechanism dominates
+instead, \S3.2.3). Second, we give a division-free integer decision rule and a
+histogram-based integer quantile estimator, so that the contract holds by
+construction on the deployed graph, the host leaves the inference loop, and the
+integer threshold is transported across quantization configurations using only
+two scale tables --- zero data, zero re-calibration. On an Atlas 200I DK A2
+(Ascend 310B) board we report: transported-threshold $P_{fa}$ drift of
+0.046--0.111 dex, versus 2.55 dex ($\sim$300$\times$) without scale
+conversion; bit-exact reproducibility of the deployed graph (rate 1.0);
+P99-latency cross-window spread of only 0.69\% (INT8 rerun; 1.76\% for the
+sensor-instrumented FP16 run with flat latency as temperature rose
+51.7$\to$53.5\,$^\circ$C) over 40-minute continuous loads (per-window
+$P_{fa}$ constancy being a direct corollary of integer determinism); per-scene
+integer quantiles cut the candidate load 4.7--4.9$\times$ under rough seas
+(transparent bucketer, rough subset of 35 frames), with a 0.024 ms decision
+layer (host-simulated upper bound) and a 1.31$\times$ INT8 speedup over FP16;
+and end-to-end compatibility with $P_d=0.991$ (7$\times$ the pixel-domain CFAR
+baseline) at only $-0.29$ mAP points. These measurements are only meaningful
+on fixed-point hardware --- and they show that a threshold should live in the
+number domain where it is executed.
+\end{abstract}
+
+\begin{keyword}
+SAR ship detection \sep constant false-alarm rate \sep post-training
+quantization \sep threshold transport \sep edge deployment \sep Ascend NPU
+\sep integer arithmetic
+\end{keyword}
+
+\end{frontmatter}
+
+% ---------- Highlights（Neural Networks 投稿要求：3–5 条，每条 ≤85 字符） ----------
+\section*{Highlights}
+\begin{itemize}
+\item Closed-form bound propagates per-layer int8 scales into false-alarm drift
+\item Division-free integer rule keeps the $P_{fa}$ contract on the NPU graph
+\item Threshold transport across quantization configs: zero data, zero recalibration
+\item Board-level: bit-exact reruns, 1.31$\times$ INT8 speedup, $P_{fa}$ within
+      contract on Ascend 310B
+\item Nearshore/offshore scene study: QCert holds 1.07$\alpha$ on every frame
+\end{itemize}
+
+% ---------- 中文摘要 ----------
+\section*{摘要（中文）}
+可部署的 SAR 舰船检测器在浮点域标定、在定点 NPU 上执行，而验收口径 mAP
+恰好看不见这一错配：mAP 是对全排序的积分，误警率 $P_{fa}=10^{-3}$ 是
+99.9\% 分位——int8 量化通过分母量化粒度、逐层舍入与潜在的输出饱和恰好只
+扰动尾部，在 mAP 上几乎不可见。本文把误警率契约搬进整数算术。首先给出
+闭式界把逐层 scale 传播为 $P_{fa}$ 漂移，并定位分母（零模型尺度）为逐
+位置零模型部署的主导机制——$\alpha=10^{-3}$ 处 5\% 的量化误差使
+$P_{fa}$ 膨胀 1.6 倍；合成验证在全部 12 个误差档成立（本文 SSDD 链路的
+零模型尺度固定，主导项转为输出网格机制，见 \S3.2.3）。随后给出无除法整
+数判决规则与直方图整数分位数估计，使契约在部署图上按构造成立、host 退
+出推理回路，并支持仅凭两份 scale 表的免数据阈值搬运。在 Atlas 200I DK
+A2（Ascend 310B）上的板级实测给出：搬运后 $P_{fa}$ 漂移 0.046--0.111
+dex，而不换算高达 2.55 dex（约 300 倍）；同一部署图逐 bit 可复现
+（bit-exact 率 1.0）；40 分钟连续负载下 P99 跨窗极差仅 0.69\%（INT8 复
+跑；FP16 带传感器运行为 1.76\%，温度 51.7$\to$53.5\,$^\circ$C 时延不涨；
+$P_{fa}$ 逐窗恒定系整数确定性的直接推论）；逐场景整数分位把粗糙海况候
+选负载压降 4.7--4.9 倍（透明分桶器 rough 子集 35 帧）、判决层仅 0.024 ms
+（host 仿真上界）、INT8 较 FP16 提速 1.31 倍；端到端检测兼容无损
+（$P_d$ 0.991，为像素域 CFAR 基线的 7 倍，mAP 仅降 0.29 点）。上述测量
+只在定点硬件上有意义——它们证明：阈值应当活在它被执行的那个数域里。
+
+\medskip
+\noindent\textbf{关键词}：SAR 舰船检测；恒定误警率；训练后量化；阈值搬
+运；边缘部署；Ascend NPU；整数算术
+
+\bigskip
+
+% ---------- 正文（pandoc 生成） ----------
+\input{body.tex}
+
+\end{document}

@@ -1,0 +1,1031 @@
+{
+  "n": 256,
+  "stratified": false,
+  "seed": 0,
+  "items": [
+    {
+      "path": "/root/asc_sar/data/calib/000004.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000006.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000012.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000016.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000023.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000025.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000027.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000033.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000034.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000037.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000042.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000044.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000048.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000054.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000057.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000060.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000062.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000067.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000070.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000078.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000082.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000085.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000087.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000090.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000092.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000100.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000103.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000108.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000110.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000117.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000118.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000120.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000123.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000130.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000134.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000142.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000143.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000144.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000146.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000147.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000148.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000150.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000154.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000156.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000158.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000160.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000162.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000163.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000172.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000173.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000175.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000180.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000182.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000190.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000204.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000206.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000208.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000224.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000227.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000232.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000233.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000236.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000244.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000248.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000253.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000255.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000267.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000268.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000282.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000285.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000290.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000294.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000295.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000297.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000303.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000320.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000327.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000334.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000336.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000337.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000342.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000344.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000346.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000348.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000354.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000360.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000363.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000372.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000382.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000385.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000386.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000390.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000392.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000394.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000397.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000406.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000410.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000412.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000415.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000423.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000430.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000432.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000433.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000435.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000442.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000443.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000444.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000458.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000463.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000473.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000478.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000480.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000484.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000492.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000496.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000497.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000500.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000504.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000505.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000506.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000507.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000530.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000536.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000545.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000546.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000558.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000560.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000563.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000568.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000573.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000574.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000577.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000580.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000582.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000585.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000586.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000590.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000594.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000603.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000615.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000617.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000623.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000625.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000627.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000628.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000633.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000634.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000640.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000642.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000647.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000658.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000660.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000668.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000672.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000674.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000678.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000683.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000687.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000693.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000703.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000715.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000716.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000717.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000733.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000746.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000750.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000754.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000757.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000770.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000774.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000778.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000785.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000786.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000796.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000805.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000816.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000817.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000818.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000820.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000822.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000824.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000832.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000834.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000835.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000836.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000837.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000855.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000856.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000857.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000858.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000870.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000872.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000878.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000884.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000887.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000890.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000903.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000910.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000912.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000918.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000942.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000945.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000950.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000953.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000955.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000956.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000962.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000963.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000982.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000983.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000985.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000992.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000993.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000995.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/000997.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001006.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001008.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001012.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001015.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001016.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001017.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001020.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001022.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001027.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001034.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001036.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001043.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001046.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001048.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001050.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001056.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001062.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001067.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001070.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001073.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001077.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001078.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001080.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001087.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001100.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001103.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001107.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001113.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001128.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001130.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001134.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001136.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001140.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001142.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001143.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001144.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001145.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001147.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001153.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001158.jpg",
+      "stratum": "all"
+    },
+    {
+      "path": "/root/asc_sar/data/calib/001160.jpg",
+      "stratum": "all"
+    }
+  ]
+}

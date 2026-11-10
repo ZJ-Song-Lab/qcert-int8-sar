@@ -1,0 +1,6 @@
+{
+  "name": "calmA",
+  "delta_s": 0.08398535741128874,
+  "delta_sigma": 0.0466,
+  "note": "delta_s = cv3 head0 输出量化步长（yolo11n_ssdd_int8_calmA_scale.json output_entry.delta）；delta_sigma = 压测集 logit 块内 std 中位数 1.164 的 1/25（~2% 量化精度）"
+}

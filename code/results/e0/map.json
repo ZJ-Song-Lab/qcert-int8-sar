@@ -1,0 +1,2 @@
+{"fp32": 0.9827, "int8": 0.9798,
+ "note": "fp32 键实为 FP16 OM（板上无 FP32 OM）；mAP@0.5 来自 acl_infer 232 张 test 图评测"}

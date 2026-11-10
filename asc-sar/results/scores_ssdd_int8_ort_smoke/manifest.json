@@ -1,0 +1,11 @@
+{
+  "source": "ort",
+  "impl": "int8_ort",
+  "n": 3,
+  "nc": 1,
+  "model": "..\\asc-sar\\models\\yolo11n_ssdd_int8_sim.onnx",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "out": "..\\asc-sar\\results\\scores_ssdd_int8_ort_smoke"
+}

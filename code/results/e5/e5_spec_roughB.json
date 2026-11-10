@@ -1,0 +1,6 @@
+{
+  "name": "roughB",
+  "delta_s": 0.09143707030525822,
+  "delta_sigma": 0.0466,
+  "note": "delta_s = cv3 head0 输出量化步长（yolo11n_ssdd_int8_roughB_scale.json output_entry.delta）；delta_sigma 同 calmA（假设 σ 链路量化步长不变，换构建只变 score 步长）"
+}

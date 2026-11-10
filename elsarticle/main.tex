@@ -1,0 +1,79 @@
+%% QCert manuscript for Neural Networks (Elsevier) -- elsarticle, numbered references
+%% Build: pdflatex main && bibtex main && pdflatex main && pdflatex main
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl} % allow URLs to break anywhere
+
+\journal{Neural Networks}
+
+% --- Theorem environments (numbering follows the manuscript) ---
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\setcounter{proposition}{1} % the bound proposition is Proposition 2 in the text
+
+% --- Shorthand ---
+\newcommand{\Pfa}{P_{fa}}
+\newcommand{\OmC}{\Omega_{\mathrm{clutter}}}
+\newcommand{\ncal}{n_{\mathrm{cal}}}
+\newcommand{\neff}{n_{\mathrm{eff}}}
+\newcommand{\sD}{\Delta}
+\newcommand{\deq}[1]{\stackrel{#1}{=}}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{QCert: Making False-Alarm Guarantees Survive Integer Quantization for On-Board SAR Ship Detection}
+
+%% TODO: replace the placeholder author list before submission.
+\author[inst1]{First Author\corref{cor1}}
+\ead{first.author@example.com}
+\author[inst1]{Second Author}
+\affiliation[inst1]{organization={Institution}, addressline={Address}, city={City}, country={China}}
+\cortext[cor1]{Corresponding author.}
+
+\begin{abstract}
+Deployable SAR ship detectors are calibrated in floating point but executed on fixed-point NPUs --- and the acceptance metric, mAP, is blind to the mismatch: mAP integrates over the full ranking, whereas the false-alarm rate $\Pfa=10^{-3}$ lives at the 99.9th percentile, exactly the region that int8 quantization perturbs through denominator granularity, accumulated rounding, and potential output saturation.
+We move the false-alarm contract into integer arithmetic.
+First, we derive a closed-form bound that propagates per-layer scale factors to $\Pfa$, and show that for deployments with per-position null models the denominator of the decision statistic dominates --- a 5\% quantization error on the null-model scale inflates $\Pfa$ by $1.6\times$ at $\alpha=10^{-3}$; the bound is verified on all 12 error levels (our SSDD instance fixes the null scale, where the output-grid mechanism dominates instead, Section~\ref{sec:null-inst}).
+Second, we give a division-free integer decision rule and a histogram-based integer quantile estimator, so that the contract holds by construction on the deployed graph, the host leaves the inference loop, and the integer threshold is transported across quantization configurations using only two scale tables --- zero data, zero re-calibration.
+On an Atlas 200I DK A2 (Ascend 310B) board we report: transported-threshold $\Pfa$ drift of 0.046--0.111 dex, versus 2.55 dex ($\sim$300$\times$) without scale conversion; bit-exact reproducibility of the deployed graph (rate 1.0); P99-latency cross-window spread of only 0.69\% (INT8 rerun; 1.76\% for the sensor-instrumented FP16 run with flat latency as temperature rose 51.7$\to$53.5~$^{\circ}$C) over 40-minute continuous loads (per-window $\Pfa$ constancy being a direct corollary of integer determinism); per-scene integer quantiles cut the candidate load 4.7--4.9$\times$ under rough seas (transparent bucketer, rough subset of 35 frames), with a 0.024~ms decision layer (host-simulated upper bound) and a $1.31\times$ INT8 speedup over FP16; and end-to-end compatibility with $P_d=0.991$ (7$\times$ the pixel-domain CFAR baseline) at only $-0.29$ mAP points.
+These measurements are only meaningful on fixed-point hardware --- and they show that a threshold should live in the number domain where it is executed.
+\end{abstract}
+
+\begin{highlights}
+\item The false-alarm contract is moved into integer arithmetic for fixed-point NPUs.
+\item A closed-form drift bound from scale tables only; verified on all 12 error levels.
+\item Zero-data integer threshold transport across quantization configurations.
+\item Division-free integer decision layer takes the host out of the inference loop.
+\item On Atlas 200I DK A2: 4.7--4.9x candidate-load cut; P99 spread 0.69\%/1.76\% over 40 min.
+\item End-to-end compatible: Pd 0.991 (7x pixel-domain CFAR), mAP loss 0.29 points.
+\end{highlights}
+
+\begin{keyword}
+SAR ship detection \sep constant false-alarm rate \sep post-training quantization \sep threshold transport \sep edge deployment \sep Ascend NPU \sep integer arithmetic
+\end{keyword}
+
+\end{frontmatter}
+
+\input{sec1_introduction}
+\input{sec2_related}
+\input{sec3_method}
+\input{sec4_experiments}
+\input{sec5_discussion}
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Acknowledgements}
+% TODO: funding and acknowledgements.
+
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,2 @@
+﻿n_scenes,alpha,pfa_fp32,pfa_int8,R,R_lo,R_hi,R_median,dmap50,pass_R,pass_map,verdict
+232,0.001,0.00160251,0.00155307,0.969149,0.901366,1.03336,1,-0.29,False,True,NO-GO

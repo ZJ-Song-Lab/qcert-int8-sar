@@ -1,0 +1,1069 @@
+[
+  {
+    "stem": "000001",
+    "index": 0,
+    "file": "000001__out0.npy",
+    "shape": [
+      1,
+      84,
+      8400
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 1,
+    "file": "000001__out1.npy",
+    "shape": [
+      1,
+      16,
+      320,
+      320
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 2,
+    "file": "000001__out2.npy",
+    "shape": [
+      1,
+      32,
+      160,
+      160
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 3,
+    "file": "000001__out3.npy",
+    "shape": [
+      1,
+      32,
+      160,
+      160
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 4,
+    "file": "000001__out4.npy",
+    "shape": [
+      1,
+      8,
+      160,
+      160
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 5,
+    "file": "000001__out5.npy",
+    "shape": [
+      1,
+      16,
+      160,
+      160
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 6,
+    "file": "000001__out6.npy",
+    "shape": [
+      1,
+      64,
+      160,
+      160
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 7,
+    "file": "000001__out7.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 8,
+    "file": "000001__out8.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 9,
+    "file": "000001__out9.npy",
+    "shape": [
+      1,
+      16,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 10,
+    "file": "000001__out10.npy",
+    "shape": [
+      1,
+      32,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 11,
+    "file": "000001__out11.npy",
+    "shape": [
+      1,
+      128,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 12,
+    "file": "000001__out12.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 13,
+    "file": "000001__out13.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 14,
+    "file": "000001__out14.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 15,
+    "file": "000001__out15.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 16,
+    "file": "000001__out16.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 17,
+    "file": "000001__out17.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 18,
+    "file": "000001__out18.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 19,
+    "file": "000001__out19.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 20,
+    "file": "000001__out20.npy",
+    "shape": [
+      1,
+      64,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 21,
+    "file": "000001__out21.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 22,
+    "file": "000001__out22.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 23,
+    "file": "000001__out23.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 24,
+    "file": "000001__out24.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 25,
+    "file": "000001__out25.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 26,
+    "file": "000001__out26.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 27,
+    "file": "000001__out27.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 28,
+    "file": "000001__out28.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 29,
+    "file": "000001__out29.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 30,
+    "file": "000001__out30.npy",
+    "shape": [
+      1,
+      128,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 31,
+    "file": "000001__out31.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 32,
+    "file": "000001__out32.npy",
+    "shape": [
+      1,
+      128,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 33,
+    "file": "000001__out33.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 34,
+    "file": "000001__out34.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 35,
+    "file": "000001__out35.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 36,
+    "file": "000001__out36.npy",
+    "shape": [
+      1,
+      128,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 37,
+    "file": "000001__out37.npy",
+    "shape": [
+      1,
+      128,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 38,
+    "file": "000001__out38.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 39,
+    "file": "000001__out39.npy",
+    "shape": [
+      1,
+      128,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 40,
+    "file": "000001__out40.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 41,
+    "file": "000001__out41.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 42,
+    "file": "000001__out42.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 43,
+    "file": "000001__out43.npy",
+    "shape": [
+      1,
+      64,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 44,
+    "file": "000001__out44.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 45,
+    "file": "000001__out45.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 46,
+    "file": "000001__out46.npy",
+    "shape": [
+      1,
+      16,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 47,
+    "file": "000001__out47.npy",
+    "shape": [
+      1,
+      32,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 48,
+    "file": "000001__out48.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 49,
+    "file": "000001__out49.npy",
+    "shape": [
+      1,
+      64,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 50,
+    "file": "000001__out50.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 51,
+    "file": "000001__out51.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 52,
+    "file": "000001__out52.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 53,
+    "file": "000001__out53.npy",
+    "shape": [
+      1,
+      80,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 54,
+    "file": "000001__out54.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 55,
+    "file": "000001__out55.npy",
+    "shape": [
+      1,
+      64,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 56,
+    "file": "000001__out56.npy",
+    "shape": [
+      1,
+      80,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 57,
+    "file": "000001__out57.npy",
+    "shape": [
+      1,
+      32,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 58,
+    "file": "000001__out58.npy",
+    "shape": [
+      1,
+      80,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 59,
+    "file": "000001__out59.npy",
+    "shape": [
+      1,
+      64,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 60,
+    "file": "000001__out60.npy",
+    "shape": [
+      1,
+      80,
+      80,
+      80
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 61,
+    "file": "000001__out61.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 62,
+    "file": "000001__out62.npy",
+    "shape": [
+      1,
+      128,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 63,
+    "file": "000001__out63.npy",
+    "shape": [
+      1,
+      64,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 64,
+    "file": "000001__out64.npy",
+    "shape": [
+      1,
+      128,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 65,
+    "file": "000001__out65.npy",
+    "shape": [
+      1,
+      64,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 66,
+    "file": "000001__out66.npy",
+    "shape": [
+      1,
+      80,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 67,
+    "file": "000001__out67.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 68,
+    "file": "000001__out68.npy",
+    "shape": [
+      1,
+      64,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 69,
+    "file": "000001__out69.npy",
+    "shape": [
+      1,
+      80,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 70,
+    "file": "000001__out70.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 71,
+    "file": "000001__out71.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 72,
+    "file": "000001__out72.npy",
+    "shape": [
+      1,
+      80,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 73,
+    "file": "000001__out73.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 74,
+    "file": "000001__out74.npy",
+    "shape": [
+      1,
+      80,
+      40,
+      40
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 75,
+    "file": "000001__out75.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 76,
+    "file": "000001__out76.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 77,
+    "file": "000001__out77.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 78,
+    "file": "000001__out78.npy",
+    "shape": [
+      1,
+      128,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 79,
+    "file": "000001__out79.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 80,
+    "file": "000001__out80.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 81,
+    "file": "000001__out81.npy",
+    "shape": [
+      1,
+      256,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 82,
+    "file": "000001__out82.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 83,
+    "file": "000001__out83.npy",
+    "shape": [
+      1,
+      80,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 84,
+    "file": "000001__out84.npy",
+    "shape": [
+      1,
+      64,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 85,
+    "file": "000001__out85.npy",
+    "shape": [
+      1,
+      80,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 86,
+    "file": "000001__out86.npy",
+    "shape": [
+      1,
+      80,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 87,
+    "file": "000001__out87.npy",
+    "shape": [
+      1,
+      1,
+      4,
+      8400
+    ],
+    "dtype": "float32"
+  },
+  {
+    "stem": "000001",
+    "index": 88,
+    "file": "000001__out88.npy",
+    "shape": [
+      1,
+      80,
+      20,
+      20
+    ],
+    "dtype": "float32"
+  }
+]

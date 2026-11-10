@@ -1,0 +1,650 @@
+[
+  {
+    "item": "1 除法消除",
+    "setting": "FP32 参照",
+    "metric": "P_fa",
+    "value": 0.0010941981930390587,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "1 除法消除",
+    "setting": "交叉相乘（整数，三路 scale）",
+    "metric": "P_fa",
+    "value": 0.0011299897227179064,
+    "ref": 0.0010941981930390587,
+    "delta": 3.5791529678847736e-05,
+    "note": "C2：无除法、无浮点"
+  },
+  {
+    "item": "1 除法消除",
+    "setting": "先量化 z 再比较",
+    "metric": "P_fa",
+    "value": 0.0010635197390286178,
+    "ref": 0.0010941981930390587,
+    "delta": -3.0678454010440916e-05,
+    "note": "仅作参考：整数域需一次除法，NPU 不可实现"
+  },
+  {
+    "item": "1 除法消除",
+    "setting": "交叉相乘（整数，三路 scale）",
+    "metric": "判决不一致率",
+    "value": 0.0016924280462426564,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "1 除法消除",
+    "setting": "先量化 z 再比较",
+    "metric": "判决不一致率",
+    "value": 0.0005777775505299703,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "精确排序（np.quantile）",
+    "metric": "P_fa",
+    "value": 0.011954370912735138,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "α=0.01（本项放大α以分辨桶宽）"
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "精确排序（np.quantile）",
+    "metric": "标定耗时 ms",
+    "value": 0.09153125013957226,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=256",
+    "metric": "P_fa",
+    "value": 0.011995275518082393,
+    "ref": 0.011954370912735138,
+    "delta": 4.0904605347254555e-05,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=256",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.07901022767764312,
+    "ref": 0.07752672672395393,
+    "delta": 0.0014835009536891958,
+    "note": "含测量集抽样方差，非纯桶宽误差"
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=256",
+    "metric": "λ 误差 |z|（均值）",
+    "value": 0.017419571091739316,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=256",
+    "metric": "标定耗时 ms",
+    "value": 0.08869583325576968,
+    "ref": 0.09153125013957226,
+    "delta": -0.00283541688380258,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=1024",
+    "metric": "P_fa",
+    "value": 0.012092423955782122,
+    "ref": 0.011954370912735138,
+    "delta": 0.00013805304304698347,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=1024",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.08251336497196299,
+    "ref": 0.07752672672395393,
+    "delta": 0.004986638248009059,
+    "note": "含测量集抽样方差，非纯桶宽误差"
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=1024",
+    "metric": "λ 误差 |z|（均值）",
+    "value": 0.007277178281491528,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=1024",
+    "metric": "标定耗时 ms",
+    "value": 0.0789770832625436,
+    "ref": 0.09153125013957226,
+    "delta": -0.012554166877028664,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=4096",
+    "metric": "P_fa",
+    "value": 0.012123102409792563,
+    "ref": 0.011954370912735138,
+    "delta": 0.00016873149705742482,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=4096",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.08361377387632081,
+    "ref": 0.07752672672395393,
+    "delta": 0.006087047152366881,
+    "note": "含测量集抽样方差，非纯桶宽误差"
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=4096",
+    "metric": "λ 误差 |z|（均值）",
+    "value": 0.00593960922163493,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "2 直方图桶数",
+    "setting": "直方图 B=4096",
+    "metric": "标定耗时 ms",
+    "value": 0.09270416652877127,
+    "ref": 0.09153125013957226,
+    "delta": 0.0011729163891990024,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=1",
+    "metric": "P_fa",
+    "value": 0.0010941981930390587,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=1",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.039095993247323456,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "keep=1 表示全部块，即无抽样误差"
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=1",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 49.875,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.25",
+    "metric": "P_fa",
+    "value": 0.0013479547573681436,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.25",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.1296753158231136,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.25",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 25.0,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.125",
+    "metric": "P_fa",
+    "value": 0.0018393623543838135,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.125",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.26466729367938663,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.125",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 12.0,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.0625",
+    "metric": "P_fa",
+    "value": 0.002779203010090645,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.0625",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.4439202714776094,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.0625",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 6.0,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "16 场景",
+    "metric": "α 误差 |log10|（均值）",
+    "value": 0.03805192269683001,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "10 次重采样"
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "16 场景",
+    "metric": "α 误差 |log10|（std）",
+    "value": 0.04028569195594447,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "64 场景",
+    "metric": "α 误差 |log10|（均值）",
+    "value": 0.008217860512704536,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "10 次重采样"
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "64 场景",
+    "metric": "α 误差 |log10|（std）",
+    "value": 0.006048714141276336,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "256 场景",
+    "metric": "α 误差 |log10|（均值）",
+    "value": 0.014603282065818906,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "10 次重采样"
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "256 场景",
+    "metric": "α 误差 |log10|（std）",
+    "value": 0.016302608050217098,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "逐场景标定",
+    "metric": "P_fa",
+    "value": 0.0010941981930390587,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "α 误差 0.039"
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "全局标定",
+    "metric": "P_fa",
+    "value": 0.0007976398042714634,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "α 误差 0.098"
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "逐场景标定",
+    "metric": "P_d@1e-3（单元级，汇总）",
+    "value": 0.5848059454995871,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "全局标定",
+    "metric": "P_d@1e-3（单元级，汇总）",
+    "value": 0.5466556564822461,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "逐场景 − 全局",
+    "metric": "ΔP_d",
+    "value": 0.038150289017340966,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "保留'逐场景标定'（ΔP_d ≥ 2 点或 α 误差减半）"
+  },
+  {
+    "item": "6 有/无 h0",
+    "setting": "z = (s−μ)/σ",
+    "metric": "R（INT8/FP32，汇总）",
+    "value": 1.0327102803738317,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "6 有/无 h0",
+    "setting": "s（无 h0，直接取阈值）",
+    "metric": "R（INT8/FP32，汇总）",
+    "value": 0.9174757281553398,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "6 有/无 h0",
+    "setting": "z = (s−μ)/σ",
+    "metric": "P_d@1e-3（INT8，汇总）",
+    "value": 0.5818331957060281,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "6 有/无 h0",
+    "setting": "s（无 h0，直接取阈值）",
+    "metric": "P_d@1e-3（INT8，汇总）",
+    "value": 0.17836498761354252,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "分层（三海况）",
+    "metric": "s 上饱和率（压测集均值）",
+    "value": 0.005094246031746032,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "分层（三海况）",
+    "metric": "P_fa FP32",
+    "value": 0.001001984126984127,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "分层（三海况）",
+    "metric": "P_fa INT8",
+    "value": 0.0008829365079365079,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "分层（三海况）",
+    "metric": "R（压测集，INT8/FP32）",
+    "value": 0.8811881188118812,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "只取平静",
+    "metric": "s 上饱和率（压测集均值）",
+    "value": 0.08971726190476191,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "只取平静",
+    "metric": "P_fa FP32",
+    "value": 0.001001984126984127,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "只取平静",
+    "metric": "P_fa INT8",
+    "value": 0.00026785714285714287,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "7 校准集分层",
+    "setting": "只取平静",
+    "metric": "R（压测集，INT8/FP32）",
+    "value": 0.26732673267326734,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "round @ ε_σ=0.02",
+    "metric": "Δln P_fa（汇总）",
+    "value": 0.00930239266231363,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "对称舍入：一阶项相消"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.02",
+    "metric": "Δln P_fa（汇总）",
+    "value": 0.1985443923008421,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "有偏舍入：一阶项 z²ε_σ 应浮现"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "round @ ε_σ=0.05",
+    "metric": "Δln P_fa（汇总）",
+    "value": 0.08076135664445859,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "对称舍入：一阶项相消"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.05",
+    "metric": "Δln P_fa（汇总）",
+    "value": 0.7365825795917176,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "有偏舍入：一阶项 z²ε_σ 应浮现"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "round @ ε_σ=0.10",
+    "metric": "Δln P_fa（汇总）",
+    "value": 0.3277561237808481,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "对称舍入：一阶项相消"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.10",
+    "metric": "Δln P_fa（汇总）",
+    "value": 1.7641224951037262,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "有偏舍入：一阶项 z²ε_σ 应浮现"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "round @ ε_σ=0.20",
+    "metric": "Δln P_fa（汇总）",
+    "value": 1.0342814302869696,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "对称舍入：一阶项相消"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.20",
+    "metric": "Δln P_fa（汇总）",
+    "value": 3.633643325638679,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "有偏舍入：一阶项 z²ε_σ 应浮现"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.02",
+    "metric": "Δln / (z_λ² ε_σ)",
+    "value": 1.067834268492311,
+    "ref": 1.0,
+    "delta": 0.067834268492311,
+    "note": "z_λ²=9.30；Prop.2 一阶预言在 ε→0 取 1"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.05",
+    "metric": "Δln / (z_λ² ε_σ)",
+    "value": 1.5846292326820155,
+    "ref": 1.0,
+    "delta": 0.5846292326820155,
+    "note": "z_λ²=9.30；Prop.2 一阶预言在 ε→0 取 1"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.10",
+    "metric": "Δln / (z_λ² ε_σ)",
+    "value": 1.8976012691766448,
+    "ref": 1.0,
+    "delta": 0.8976012691766448,
+    "note": "z_λ²=9.30；Prop.2 一阶预言在 ε→0 取 1"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor @ ε_σ=0.20",
+    "metric": "Δln / (z_λ² ε_σ)",
+    "value": 1.9542878132342447,
+    "ref": 1.0,
+    "delta": 0.9542878132342447,
+    "note": "z_λ²=9.30；Prop.2 一阶预言在 ε→0 取 1"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "round 局部 0.02→0.05",
+    "metric": "指数 p",
+    "value": 2.358669441920647,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "渐近值 round=2（二阶）、floor=1（一阶）"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "round 局部 0.05→0.10",
+    "metric": "指数 p",
+    "value": 2.0208856853006494,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "渐近值 round=2（二阶）、floor=1（一阶）"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "round 局部 0.10→0.20",
+    "metric": "指数 p",
+    "value": 1.6579341585518312,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "渐近值 round=2（二阶）、floor=1（一阶）"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor 局部 0.02→0.05",
+    "metric": "指数 p",
+    "value": 1.4307780210518022,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "渐近值 round=2（二阶）、floor=1（一阶）"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor 局部 0.05→0.10",
+    "metric": "指数 p",
+    "value": 1.2600315580033132,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "渐近值 round=2（二阶）、floor=1（一阶）"
+  },
+  {
+    "item": "8 floor vs round",
+    "setting": "floor 局部 0.10→0.20",
+    "metric": "指数 p",
+    "value": 1.0424660726232948,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "渐近值 round=2（二阶）、floor=1（一阶）"
+  }
+]

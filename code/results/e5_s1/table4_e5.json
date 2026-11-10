@@ -1,0 +1,32 @@
+[
+  {
+    "setting": "A→B 同设备换校准集（设置1）",
+    "n_images": 232,
+    "n_meas": 949703,
+    "pfa_transport": 0.0012919828620105444,
+    "pfa_recal": 0.0013635841942165076,
+    "pfa_no_convert": 0.0038180357438062215,
+    "alpha": 0.001,
+    "drift_transport": 0.11125675283583306,
+    "drift_recal": 0.1346819585260994,
+    "drift_no_convert": 0.5818399898683186,
+    "insufficient": false,
+    "pass": true,
+    "better_than_no_convert": true
+  },
+  {
+    "setting": "重标定上界",
+    "n_images": 232,
+    "n_meas": 949703,
+    "pfa_transport": null,
+    "pfa_recal": 0.0013635841942165076,
+    "pfa_no_convert": null,
+    "alpha": 0.001,
+    "drift_transport": null,
+    "drift_recal": 0.1346819585260994,
+    "drift_no_convert": null,
+    "insufficient": false,
+    "pass": null,
+    "better_than_no_convert": null
+  }
+]

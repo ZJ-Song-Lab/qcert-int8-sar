@@ -1,0 +1,58 @@
+\section{Introduction}
+\label{sec:intro}
+
+SAR ship detection is a mature field: on SSDD, mainstream lightweight detectors (YOLO-family, DETR-family) reach 96--99\% mAP50, and the accuracy race is nearly saturated \citep{ssdd,acyolo,beswyolo,lsddetr,lamfdet}.
+Meanwhile, the deployment target is moving from ground workstations to edge and on-board platforms --- whose compute comes almost exclusively in one form: \emph{fixed-point NPUs}.
+The Atlas 200I DK A2 used in this work, for example, pairs 8 TOPS of INT8 compute with only 4 TFLOPS of FP16, at a board power of about 24 W \citep{atlas_spec}.
+Deploying a detector that is trained, calibrated, and accepted in floating point onto such fixed-point hardware is an unavoidable step for SAR detection to reach real platforms.
+
+The problem is that \textbf{the detector is calibrated by a floating-point worldview.}
+Post-training thresholds, calibration procedures, and acceptance criteria all operate on FP32 scores, whereas what executes at deployment is a graph of per-layer affine int8 quantization whose rounding is determined by hardware kernels.
+We believe ``quantization error is small'' --- because mAP barely moves.
+This paper argues that this belief rests on a wrong quantity.
+
+\textbf{The false-alarm rate $\Pfa$ is governed by the extreme upper tail of the score distribution} --- $\alpha=10^{-3}$ is exactly the 99.9th percentile --- and the three int8 mechanisms (denominator granularity, accumulated per-layer rounding, and potential output saturation) perturb precisely this region.
+mAP integrates over the full ranking of detections, where a tail change of 0.1\% is almost invisible.
+We write this blind spot as an explicit non-implication:
+\begin{equation*}
+\big|\Delta\,\mathrm{mAP}\big|<1\ \text{point}\quad\not\Longrightarrow\quad R=\frac{\Pfa^{\mathrm{INT8}}}{\Pfa^{\mathrm{FP32}}}\approx 1 .
+\end{equation*}
+This is the gap this paper occupies: \textbf{all SAR detection papers report only mAP; all PTQ papers optimize only mAP.
+The tail is a blind spot on both sides.}
+
+This gap is not a thought experiment.
+We measured the FP16 and INT8 versions of the same model on the same test set on a real fixed-point board (Ascend 310B): mAP50 dropped from 98.27 to 97.98 ($-0.29$ points, statistically indistinguishable), while the accuracy-invariance ratio stayed at $R=0.969$ --- quantization is safe \emph{for this model}.
+But this precisely exposes the full picture of the paradigm error: \textbf{$R\approx1$ has no mechanistic guarantee.}
+Once the quantization configuration or the calibration set changes (rather than ``two precisions of the same .om''), a na\"ively transported floating-point threshold inflates $\Pfa$ by 300$\times$ (the ``no-conversion'' column of setting 2 in Section~\ref{sec:e5}); the empirical rule ``quantization error is small'' has no predictive power under configuration change.
+
+Why does $\Pfa$ deserve its own gate?
+Because it is an \emph{operational contract}: on satellite/downlink chains, $\Pfa$ directly determines downlink bandwidth, the human workload of false-alarm review, and the association burden of downstream trackers.
+A detector can post beautiful mAP on 99\% of scenes while leaking 300$\times$ more false alarms when the quantization configuration changes and the threshold is not converted in integer --- and the deployer never knows, because nobody has ever calibrated ``the quantized detector''.
+
+Fixed-point arithmetic has an overlooked redeeming property: \textbf{it is deterministic, and it is readable.}
+The same .om is bit-reproducible on the same device (measured bit-exact rate 1.0, Section~\ref{sec:e3}); the per-layer quantization parameters (scale, zero-point) are fixed at compile time and readable by the user.
+Floating-point GPUs have neither --- kernel selection is runtime-dependent, accumulation order is not fixed, and scores do not land on any compile-time-readable integer lattice (even though explicit-QDQ frameworks such as TensorRT/TFLite also export scale tables, ``rounding a threshold onto a lattice'' remains undefined in floating point).
+All of our method consists in moving the false-alarm contract into this ``deterministic + readable'' integer world, so that the contract holds \textbf{by construction} instead of by empirical prayer.
+
+Concretely, this paper gives:
+\begin{itemize}
+\item \textbf{C1: an analytic bound and zero-data threshold transport.}
+Proposition~\ref{prop:bound} gives a closed-form bound $|\Delta \Pfa|\le L\delta$ on false-alarm drift, where $\delta$ is computed from the scale tables alone and needs no new data (Section~\ref{sec:prop2}); the first-order prediction $\Delta\ln \Pfa\approx z^2\varepsilon_\sigma$ identifies the denominator (null-model scale $\sigma$) as the dominant contributor --- a 5\% quantization error on $\sigma$ inflates $\Pfa$ by $1.6\times$ at $\alpha=10^{-3}$ (our SSDD chain fixes the null scale, where the output-grid mechanism dominates instead; see Section~\ref{sec:null-inst}).
+On top of this, an integer threshold can be transported across configurations as a pure function of the scale ratio (Eq.~\eqref{eq:transport}), \textbf{with zero data and zero re-calibration}.
+This capability is nowhere definable on floating-point GPUs: the transport rule is a pure function between integer lattices, which requires the conjunction of ``the same .om is bit-reproducible'' and ``scales are readable at compile time'', and a floating-point pipeline has no global lattice carrying the decision threshold (Section~\ref{sec:transport}).
+\item \textbf{C2: a division-free integer decision layer.}
+The decision $(s-\mu)/\sigma>\lambda$ is cross-multiplied into a 64-bit integer comparison (Eq.~\eqref{eq:int-decision}), with no division, no floating point, and no sorting; combined with a histogram-based integer quantile estimator, calibration is an $O(n)$ single pass.
+Decision and inference are fused into a single static graph, and the host only performs DMA --- the measured decision-layer cost of 0.024~ms is two orders of magnitude below the 3~ms budget (Section~\ref{sec:e7}).
+\item \textbf{C3: five measurement groups that only a fixed-point board can provide.}
+Saturation audit (E2), cross-implementation decision differences with bit-exact reproduction (E3), threshold transport (E5), a 40-minute thermal steady state (E6), and the false-alarm$\to$load coupling (E7).
+These numbers are meaningless in a pure-GPU experiment --- ``zero $\Pfa$ drift over 40 minutes of thermal steady state'' is a theorem, not a coincidence, only on integer-deterministic hardware.
+\end{itemize}
+
+On the Atlas 200I DK A2, all measurements tell a consistent story: after transport, $\Pfa$ hugs $\alpha$ (drift 0.046--0.111 dex, versus up to 2.55 dex without conversion); over 40 minutes of continuous load $\Pfa$ is constant per window with a P99 cross-window spread of 0.69\% (INT8 rerun) / 1.76\% (sensor-instrumented FP16 run); the candidate load under rough seas drops 4.7--4.9$\times$, and INT8 runs $1.31\times$ faster than FP16; end-to-end detection is unharmed ($P_d$ 0.991 vs 0.139 for pixel-domain CA-CFAR, mAP loss of only 0.29 points).
+
+\textbf{We do not propose a new detector; we make existing detectors dare to promise their false-alarm rate on fixed-point hardware.}
+
+\emph{Would this paper still hold on a Jetson?}
+No --- and that is by design.
+FP16 has no saturation mechanism, no compile-time-fixed scale table, and no readable per-layer affine parameters: two of the three failure mechanisms disappear, and the threshold-transport rule has nowhere to be defined.
+Every claim of this paper is precisely bound to the premise ``fixed-point integer arithmetic''; we deliberately write this boundary into the contribution itself.

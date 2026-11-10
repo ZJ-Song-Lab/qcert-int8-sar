@@ -1,0 +1,37 @@
+{
+  "n_scenes": 232,
+  "block_px": 64.0,
+  "keep": 0.5,
+  "guard_px": 8.0,
+  "n_eff_cal": {
+    "min": 45.0,
+    "p10": 49.0,
+    "median": 50.0,
+    "p90": 50.0,
+    "max": 50.0
+  },
+  "n_eff_meas": {
+    "min": 45.0,
+    "p10": 49.0,
+    "median": 50.0,
+    "p90": 50.0,
+    "max": 50.0
+  },
+  "n_meas": {
+    "min": 3063.0,
+    "p10": 3931.0,
+    "median": 4116.0,
+    "p90": 4180.0,
+    "max": 4200.0
+  },
+  "measurability": {
+    "alpha_1e-3_needs_1e3": {
+      "frac_scenes_neff_meas_ge_1000": 0.0
+    },
+    "alpha_1e-4_needs_1e4": {
+      "frac_scenes_neff_meas_ge_10000": 0.0
+    },
+    "pfa_granularity_per_scene": 0.00024295432458697764
+  },
+  "note": "n_eff=被选中的独立块数（块内样本强相关，不独立计数）；逐场景 P_fa 的量化步长为 1/n_meas"
+}

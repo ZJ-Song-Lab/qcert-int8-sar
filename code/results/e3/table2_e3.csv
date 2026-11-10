@@ -1,0 +1,4 @@
+﻿impl,n_scenes,disagree_vs_fp32,pfa_own,R_vs_fp32,bit_exact_rate
+INT8 · ACL(板),232,0.00058087,0.00118637,1.00086,1
+INT8 · ORT,232,0.000585489,0.00118842,1.00259,nan
+FP32,232,0,0.00118637,1,nan

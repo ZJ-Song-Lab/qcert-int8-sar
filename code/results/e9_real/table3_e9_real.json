@@ -1,0 +1,227 @@
+[
+  {
+    "item": "3 块抽样",
+    "setting": "keep=1",
+    "metric": "P_fa",
+    "value": 0.00158997075927948,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=1",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.20138913740199824,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "keep=1 表示全部块，即无抽样误差"
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=1",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 49.76293103448276,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.25",
+    "metric": "P_fa",
+    "value": 0.001769036322791582,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.25",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.24773675016580118,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.25",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 24.892241379310345,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.125",
+    "metric": "P_fa",
+    "value": 0.002371741031990217,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.125",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.37506726710471694,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.125",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 11.995689655172415,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.0625",
+    "metric": "P_fa",
+    "value": 0.004717105436529897,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.0625",
+    "metric": "α 误差 |log10(P_fa/α)|",
+    "value": 0.6736755836850421,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "3 块抽样",
+    "setting": "keep=0.0625",
+    "metric": "n_eff（测量块数，均值）",
+    "value": 6.0,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "16 场景",
+    "metric": "α 误差 |log10|（均值）",
+    "value": 0.08856135391498188,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "10 次重采样"
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "16 场景",
+    "metric": "α 误差 |log10|（std）",
+    "value": 0.0810079324578556,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "64 场景",
+    "metric": "α 误差 |log10|（均值）",
+    "value": 0.08024295725028172,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "10 次重采样"
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "64 场景",
+    "metric": "α 误差 |log10|（std）",
+    "value": 0.057299858723315916,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "128 场景",
+    "metric": "α 误差 |log10|（均值）",
+    "value": 0.07565161382319897,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "10 次重采样"
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "128 场景",
+    "metric": "α 误差 |log10|（std）",
+    "value": 0.0617691170141381,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "200 场景",
+    "metric": "α 误差 |log10|（均值）",
+    "value": 0.15100048799282753,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "10 次重采样"
+  },
+  {
+    "item": "4 标定样本量",
+    "setting": "200 场景",
+    "metric": "α 误差 |log10|（std）",
+    "value": 0.12907598089684716,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "逐场景标定",
+    "metric": "P_fa",
+    "value": 0.00158997075927948,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "α 误差 0.201"
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "全局标定",
+    "metric": "P_fa",
+    "value": 0.0010434841208251421,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "α 误差 0.018"
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "逐场景标定",
+    "metric": "P_d@1e-3（单元级，汇总）",
+    "value": 0.18628478983792204,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "全局标定",
+    "metric": "P_d@1e-3（单元级，汇总）",
+    "value": 0.18280955091524612,
+    "ref": NaN,
+    "delta": NaN,
+    "note": ""
+  },
+  {
+    "item": "5 逐场景 vs 全局",
+    "setting": "逐场景 − 全局",
+    "metric": "ΔP_d",
+    "value": 0.0034752389226759273,
+    "ref": NaN,
+    "delta": NaN,
+    "note": "差异很小 → 主张改为'零分布标定'（§12 必答项）"
+  }
+]

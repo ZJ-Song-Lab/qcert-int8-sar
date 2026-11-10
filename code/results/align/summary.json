@@ -1,0 +1,69 @@
+{
+  "n_scenes": 232,
+  "impl_hw": "board_fp16_cv3_acldump",
+  "impl_ort": "ort_int32_cv3",
+  "input_check": "已验证：同一 jpg（md5 相同）经两侧各自的 PIL 预处理 （板 Pillow 12.2.0 vs 本机 12.3.0）输出逐 bit 一致 → 下表差异全部来自硬件算术，不含输入管线差",
+  "by_head": [
+    {
+      "head": "head0_80x80",
+      "n_scenes": 232,
+      "delta": 0.0006938855,
+      "bit_exact": 0.0004519127155172414,
+      "bit_exact_in_region": 0.0011160714285714285,
+      "exact_region_frac": 0.0004445043103448276,
+      "resid_median_abs": 0.42384094215948276,
+      "resid_max_abs": 23.652132350000002,
+      "resid_p99_abs": 2.098123890078148,
+      "rel_div_median": 0.0276869294637592,
+      "rel_div_p99": 0.14411262392750612,
+      "uniq_frac_ort": 0.711165140086207,
+      "uniq_frac_hw": 0.14505589978448274,
+      "collapse": 0.20387772509455554,
+      "max_tie_ort": 4,
+      "max_tie_hw": 4,
+      "rho_prob": 0.8992696190051418
+    },
+    {
+      "head": "head1_40x40",
+      "n_scenes": 232,
+      "delta": 0.001323877,
+      "bit_exact": 0.0007300646551724138,
+      "bit_exact_in_region": 0.016163970981784747,
+      "exact_region_frac": 0.0030845905172413803,
+      "resid_median_abs": 0.540694535174569,
+      "resid_max_abs": 19.596912254000003,
+      "resid_p99_abs": 2.6854673854362714,
+      "rel_div_median": 0.03353168280481003,
+      "rel_div_p99": 0.1798761255217783,
+      "uniq_frac_ort": 0.8751724137931034,
+      "uniq_frac_hw": 0.43176724137931033,
+      "collapse": 0.4931323789682143,
+      "max_tie_ort": 2,
+      "max_tie_hw": 2,
+      "rho_prob": 0.9083875032836076
+    },
+    {
+      "head": "head2_20x20",
+      "n_scenes": 232,
+      "delta": 0.0005517007,
+      "bit_exact": 0.0014870689655172413,
+      "bit_exact_in_region": NaN,
+      "exact_region_frac": 0.0,
+      "resid_median_abs": 0.11035326476206904,
+      "resid_max_abs": 1.6705991738999995,
+      "resid_p99_abs": 0.5837970380920731,
+      "rel_div_median": 0.00870496956521904,
+      "rel_div_p99": 0.046799437233353954,
+      "uniq_frac_ort": 0.8977478448275861,
+      "uniq_frac_hw": 0.3633836206896552,
+      "collapse": 0.40427550221119585,
+      "max_tie_ort": 2,
+      "max_tie_hw": 3,
+      "rho_prob": 0.7792911491899989
+    }
+  ],
+  "reading": {
+    "bit_exact<1": "同输入下同权重两实现的分数场逐位置发散（A2 实证）",
+    "collapse<1": "fp16 ulp>Δ 处多个 int32 码共值 → 硬件特有并列机制（E2）"
+  }
+}

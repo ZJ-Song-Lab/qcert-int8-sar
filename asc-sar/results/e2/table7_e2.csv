@@ -1,0 +1,4 @@
+﻿contrast,n_scenes,score_sat,neck_sat,top1pct_max_tie,R,miss_rate
+1,100,nan,0,0,0.998281,0.584303
+2,100,nan,0,0,1.095,0.706231
+3,100,nan,0,0,1.01147,0.40567

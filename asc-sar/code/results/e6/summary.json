@@ -1,0 +1,16 @@
+{
+  "minutes": 40.0,
+  "window_min": 5.0,
+  "alpha": 0.001,
+  "frames_per_window": 200,
+  "source": "board",
+  "pfa_drift_log10": 0.0,
+  "p99_drift_rel": 0.01755712936758458,
+  "n_pfa_windows": 8,
+  "n_p99_windows": 8,
+  "n_windows": 8,
+  "insufficient": false,
+  "pass_pfa": true,
+  "pass_p99": true,
+  "verdict": "PASS"
+}

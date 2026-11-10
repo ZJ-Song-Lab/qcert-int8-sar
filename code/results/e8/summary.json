@@ -1,0 +1,21 @@
+{
+  "alpha": 0.001,
+  "alphas": [
+    0.001,
+    0.0001
+  ],
+  "source": "dump",
+  "n_scenes": 232,
+  "n_boxes": 546,
+  "verdict": {
+    "pd_gap_vs_best_baseline": -0.00366300366300365,
+    "pass_pd": true,
+    "R": 1.0,
+    "pass_R": true,
+    "dmap50": -0.28999999999999204,
+    "pass_map": true,
+    "pass": true
+  },
+  "pfa_noisy_1e-4": true,
+  "note": "分数场来自板级 dump"
+}

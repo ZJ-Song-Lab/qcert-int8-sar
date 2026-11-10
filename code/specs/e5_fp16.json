@@ -1,0 +1,7 @@
+{
+  "delta_s": 0.0078125,
+  "delta_sigma": 0.0078125,
+  "shift_bits": 16,
+  "domain": "raw logit = logit(prob)（OM 输出 prob 反变换）",
+  "note": "FP16 OM 的输出端实测网格：raw logit 精确落在 fp16 分段格点（probe 残差全 0），量测 cell 主体段 [-16,-8) ulp=2^-7=0.0078125；dSigma 取同域 fp16 步长（判决层 sigma 量化，与模型配置无关）"
+}

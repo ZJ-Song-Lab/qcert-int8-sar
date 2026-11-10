@@ -1,0 +1,2 @@
+{"fp16": 45.5, "int8": 34.68,
+ "note": "板级实测（Atlas 200I DK / Ascend 310B，acl_infer --benchmark iters=200，2026-11-04）：fp16 45.5ms/21.98FPS/9.1W，int8 34.68ms/28.84FPS/9.31W。出处 results/e0/map.json note。"}

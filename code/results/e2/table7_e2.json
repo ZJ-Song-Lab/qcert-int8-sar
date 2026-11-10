@@ -1,0 +1,29 @@
+[
+  {
+    "contrast": 1.0,
+    "n_scenes": 100,
+    "score_sat": 0.0,
+    "neck_sat": 0.0,
+    "top1pct_max_tie": 5,
+    "R": Infinity,
+    "miss_rate": 0.5843034763565413
+  },
+  {
+    "contrast": 2.0,
+    "n_scenes": 100,
+    "score_sat": 0.0,
+    "neck_sat": 0.0,
+    "top1pct_max_tie": 4,
+    "R": Infinity,
+    "miss_rate": 0.7062310195204488
+  },
+  {
+    "contrast": 3.0,
+    "n_scenes": 100,
+    "score_sat": 0.0,
+    "neck_sat": 0.0,
+    "top1pct_max_tie": 4,
+    "R": Infinity,
+    "miss_rate": 0.40566997192630394
+  }
+]

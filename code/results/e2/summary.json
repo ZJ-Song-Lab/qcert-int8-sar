@@ -1,0 +1,41 @@
+{
+  "alpha": 0.001,
+  "n_scenes": 300,
+  "keep": 0.5,
+  "source": "dump",
+  "dose_from": "stem",
+  "sat_by_contrast": {
+    "1.0": 0.0,
+    "2.0": 0.0,
+    "3.0": 0.0
+  },
+  "neck_sat_by_layer_contrast": {
+    "p3": {
+      "1.0": 0.0,
+      "2.0": 4.8828125e-08,
+      "3.0": 0.0
+    },
+    "p4": {
+      "1.0": 0.0,
+      "2.0": 0.0,
+      "3.0": 0.0
+    },
+    "p5": {
+      "1.0": 0.0,
+      "2.0": 0.0,
+      "3.0": 0.0
+    }
+  },
+  "R_by_contrast": {
+    "1.0": Infinity,
+    "2.0": Infinity,
+    "3.0": Infinity
+  },
+  "spearman": {
+    "n": 3,
+    "rho": NaN,
+    "monotonic_sat": true,
+    "pass": false
+  },
+  "verdict": "WEAK"
+}

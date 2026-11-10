@@ -1,0 +1,63 @@
+[
+  {
+    "method": "CA-CFAR（像素域）",
+    "source": "dump",
+    "pd_at_1e-3": 0.1391941391941392,
+    "pd_at_1e-4": 0.07509157509157509,
+    "map50": NaN,
+    "pfa": 0.00029497112693710974,
+    "pfa_std_across_buckets": NaN,
+    "R": NaN,
+    "latency_ms": NaN,
+    "n_box": 546
+  },
+  {
+    "method": "YOLO11n + 全局阈值",
+    "source": "dump",
+    "pd_at_1e-3": 0.9945054945054945,
+    "pd_at_1e-4": 0.9871794871794872,
+    "map50": 98.27,
+    "pfa": 0.0010374857768306817,
+    "pfa_std_across_buckets": NaN,
+    "R": NaN,
+    "latency_ms": 45.5,
+    "n_box": 546
+  },
+  {
+    "method": "YOLO11n + QCert(FP16)",
+    "source": "dump",
+    "pd_at_1e-3": 0.9908424908424909,
+    "pd_at_1e-4": NaN,
+    "map50": 98.27,
+    "pfa": 0.0017411166600987407,
+    "pfa_std_across_buckets": NaN,
+    "R": 1.0,
+    "latency_ms": 45.5,
+    "n_box": 546
+  },
+  {
+    "method": "YOLO11n + QCert(INT8)",
+    "source": "dump",
+    "pd_at_1e-3": 0.9908424908424909,
+    "pd_at_1e-4": 0.9853479853479854,
+    "map50": 97.98,
+    "pfa": 0.0017411166600987407,
+    "pfa_std_across_buckets": NaN,
+    "R": 1.0,
+    "latency_ms": 34.68,
+    "n_box": 546
+  },
+  {
+    "method": "QCert（完整）",
+    "source": "dump",
+    "pd_at_1e-3": 0.9908424908424909,
+    "pd_at_1e-4": 0.9853479853479854,
+    "map50": 97.98,
+    "pfa": 0.0017411166600987407,
+    "pfa_std_across_buckets": NaN,
+    "R": 1.0,
+    "latency_ms": 34.68,
+    "n_box": 546,
+    "note": "逐场景整数分位 + 除法消除"
+  }
+]

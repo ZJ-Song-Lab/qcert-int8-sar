@@ -1,0 +1,35 @@
+[
+  {
+    "eps_sigma": 0.02,
+    "dln_linear_tensor": 0.002253149353552253,
+    "best_config": "log_tensor",
+    "dln_best": 0.002321399472703748,
+    "eps_med_linear": 0.004555696409406959,
+    "eps_med_best": 0.005002067853557522,
+    "drop_factor": 0.9705995801437811,
+    "informative": false,
+    "P1_holds": false
+  },
+  {
+    "eps_sigma": 0.05,
+    "dln_linear_tensor": 0.012099585442962338,
+    "best_config": "log_tensor",
+    "dln_best": 0.007813878584571535,
+    "eps_med_linear": 0.011402185283448463,
+    "eps_med_best": 0.012496188684121681,
+    "drop_factor": 1.5484736948502003,
+    "informative": false,
+    "P1_holds": false
+  },
+  {
+    "eps_sigma": 0.1,
+    "dln_linear_tensor": 0.026297577685601148,
+    "best_config": "log_tensor",
+    "dln_best": 0.011741808741669857,
+    "eps_med_linear": 0.022787666230873364,
+    "eps_med_best": 0.024973310994591925,
+    "drop_factor": 2.2396530435958413,
+    "informative": false,
+    "P1_holds": false
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "delta_s": 0.0008235259277888853,
+  "delta_sigma": 0.0078125,
+  "shift_bits": 16,
+  "domain": "raw logit = logit(prob)（OM 输出 prob 反变换）",
+  "heads": {
+    "cv3.0.2": {
+      "delta": 0.0007587522268295287,
+      "cells": 6400,
+      "n_channels": 1
+    },
+    "cv3.1.2": {
+      "delta": 0.0013380730524659155,
+      "cells": 1600,
+      "n_channels": 1
+    },
+    "cv3.2.2": {
+      "delta": 0.00043823177111335115,
+      "cells": 400,
+      "n_channels": 1
+    }
+  },
+  "note": "由 e5s1_calmA_scale.json 生成（scale_to_spec.py）：三输出头 Conv_quant_dequant 的 delta 按 cell 数加权几何平均 (w=6400/1600/400)。dSigma 同 fp16 判决层 1/128。E5设置1 A=calm-256（标定域）"
+}

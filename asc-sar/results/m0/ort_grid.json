@@ -1,0 +1,43 @@
+{
+  "model": "yolo11n_ssdd_int8_cv3_sim.onnx",
+  "runtime": "onnxruntime-CPU",
+  "n_images": 232,
+  "deltas": [
+    0.0006938855,
+    0.001323877,
+    0.0005517007
+  ],
+  "heads": {
+    "head0": {
+      "delta": 0.0006938855,
+      "requant_resid_mean": 0.0013486233578713885,
+      "requant_resid_max": 0.0015427297789291847,
+      "uniq_frac": 0.711165140086207,
+      "q_min": -75700,
+      "q_max": 3346
+    },
+    "head1": {
+      "delta": 0.001323877,
+      "requant_resid_mean": 0.0044107587485083715,
+      "requant_resid_max": 0.004821265184439224,
+      "uniq_frac": 0.8751724137931034,
+      "q_min": -39135,
+      "q_max": 1659
+    },
+    "head2": {
+      "delta": 0.0005517007,
+      "requant_resid_mean": 0.0030879592086439163,
+      "requant_resid_max": 0.00359536966633641,
+      "uniq_frac": 0.8977478448275861,
+      "q_min": -25265,
+      "q_max": -14825
+    }
+  },
+  "note": "requant 在 numpy 侧完成，网格由构造保证；requant_resid 是连续值到网格的平均/最大距离（期望 ~0.25/0.5）",
+  "verdict": {
+    "grid_found": true,
+    "quantized_in": "numpy",
+    "code_dtype": "int32",
+    "note": "cv3 是 int32 累加器网格（不触顶），uniq_frac 为格点占用（E2 输入）"
+  }
+}

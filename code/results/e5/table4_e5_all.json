@@ -1,0 +1,34 @@
+[
+  {
+    "setting": "calmA_to_roughB",
+    "n_images": 300,
+    "n_meas": 1230836,
+    "pfa_transport": 0.001235745460808751,
+    "pfa_recal": 0.0011829358257314541,
+    "pfa_no_convert": 0.00029654641235712963,
+    "alpha": 0.001,
+    "drift_transport": 0.09192902386732191,
+    "drift_recal": 0.07296118479134195,
+    "drift_no_convert": 0.5279073257292017,
+    "insufficient": false,
+    "pass": true,
+    "better_than_no_convert": true,
+    "setting_label": "设置1 同传感器换构建(calmA->roughB)"
+  },
+  {
+    "setting": "FP16_to_INT8",
+    "n_images": 300,
+    "n_meas": 1230836,
+    "pfa_transport": 0.001235745460808751,
+    "pfa_recal": 0.0011829358257314541,
+    "pfa_no_convert": 0.0,
+    "alpha": 0.001,
+    "drift_transport": 0.09192902386732191,
+    "drift_recal": 0.07296118479134195,
+    "drift_no_convert": Infinity,
+    "insufficient": false,
+    "pass": true,
+    "better_than_no_convert": true,
+    "setting_label": "设置2 FP16->INT8(基准)"
+  }
+]

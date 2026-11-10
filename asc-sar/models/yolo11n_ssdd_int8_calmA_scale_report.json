@@ -1,0 +1,17 @@
+{
+  "source": "modelslim_onnx",
+  "config": "models/yolo11n_ssdd_int8_calmA.onnx",
+  "scale_json": "models/yolo11n_ssdd_int8_calmA_scale.json",
+  "n_entries": 8108,
+  "output_entry": {
+    "name": "/model.6/m.0/cv3/conv/Conv_quant_quant",
+    "delta": 0.08398535741128874,
+    "zero_point": -118,
+    "bits": 8,
+    "rmin": null,
+    "rmax": null,
+    "source": "AscendQuant"
+  },
+  "float_layers": [],
+  "a3_readable": true
+}

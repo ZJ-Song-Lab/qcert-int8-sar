@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "source": "npz",
+    "path": "D:\\dinghuibianyuan\\code\\results\\m0\\_dry\\dry_scale.npz"
+  },
+  "entries": [
+    {
+      "name": "output0",
+      "delta": 0.0078125,
+      "zero_point": 0,
+      "bits": 8,
+      "rmin": null,
+      "rmax": null,
+      "source": "npz"
+    }
+  ]
+}

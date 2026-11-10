@@ -1,0 +1,82 @@
+[
+  {
+    "window": "0-5 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.389569090271834,
+    "t_model_ms": 33.57767622524989,
+    "n_frames": 200
+  },
+  {
+    "window": "5-10 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.42301521223271,
+    "t_model_ms": 33.604072424786864,
+    "n_frames": 200
+  },
+  {
+    "window": "10-15 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.62632074748399,
+    "t_model_ms": 33.594409435463604,
+    "n_frames": 200
+  },
+  {
+    "window": "15-20 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.40317648783093,
+    "t_model_ms": 33.61271241985378,
+    "n_frames": 200
+  },
+  {
+    "window": "20-25 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.612229829945136,
+    "t_model_ms": 33.60027756090858,
+    "n_frames": 200
+  },
+  {
+    "window": "25-30 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.41298760852078,
+    "t_model_ms": 33.61786970490357,
+    "n_frames": 200
+  },
+  {
+    "window": "30-35 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.45867166185053,
+    "t_model_ms": 33.623442514654016,
+    "n_frames": 200
+  },
+  {
+    "window": "35-40 min",
+    "temp_c": NaN,
+    "freq_mhz": NaN,
+    "power_w": NaN,
+    "pfa": 0.0011904761904761904,
+    "p99_ms": 34.42303717281902,
+    "t_model_ms": 33.58704729442252,
+    "n_frames": 200
+  }
+]

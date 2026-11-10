@@ -1,0 +1,10 @@
+{
+  "source": "dry-run",
+  "impl": "int8",
+  "n": 12,
+  "delta": 0.02907301389659774,
+  "zero_point": 0,
+  "nc": 1,
+  "contrast": 1.0,
+  "out": "dumps\\demo_int8"
+}

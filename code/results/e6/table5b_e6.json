@@ -1,0 +1,11 @@
+[
+  {
+    "pfa_drift_log10": 0.0,
+    "p99_drift_rel": 0.006884403133714301,
+    "n_pfa_windows": 8,
+    "pass_pfa": true,
+    "pass_p99": true,
+    "verdict": "PASS",
+    "source": "board"
+  }
+]

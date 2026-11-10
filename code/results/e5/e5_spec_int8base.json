@@ -1,0 +1,6 @@
+{
+  "name": "int8_base",
+  "delta_s": 0.09143706233183797,
+  "delta_sigma": 0.0466,
+  "note": "delta_s = cv3 head0 输出量化步长（yolo11n_ssdd_int8_scale_report.json output_entry.delta）；delta_sigma = 压测集 logit 块内 std 中位数 1.164 的 1/25"
+}

@@ -1,0 +1,32 @@
+{
+  "model": "yolo11n_ssdd_int8.om",
+  "runtime": "acl.dump fp16 NC1HWC0",
+  "n_images": 300,
+  "layer_filter": false,
+  "files_per_img_mean": 362.0,
+  "head_deltas": [
+    0.0006938855,
+    0.001323877,
+    0.0005517007
+  ],
+  "heads": {
+    "head0": {
+      "delta": 0.0006938855,
+      "uniq_frac_v_fp16": 0.14572760416666666,
+      "uniq_frac_q_hat": 0.14572760416666666,
+      "lane_nonzero_total": 0
+    },
+    "head1": {
+      "delta": 0.001323877,
+      "uniq_frac_v_fp16": 0.42616458333333335,
+      "uniq_frac_q_hat": 0.42616458333333335,
+      "lane_nonzero_total": 0
+    },
+    "head2": {
+      "delta": 0.0005517007,
+      "uniq_frac_v_fp16": 0.36060000000000003,
+      "uniq_frac_q_hat": 0.36060000000000003,
+      "lane_nonzero_total": 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "alpha": 0.001,
+  "n_rows": 300,
+  "rows": [
+    {
+      "setting": "FP16_to_INT8",
+      "n_images": 300,
+      "n_meas": 1230836,
+      "pfa_transport": 0.001235745460808751,
+      "pfa_recal": 0.0011829358257314541,
+      "pfa_no_convert": 0.0,
+      "alpha": 0.001,
+      "drift_transport": 0.09192902386732191,
+      "drift_recal": 0.07296118479134195,
+      "drift_no_convert": Infinity,
+      "insufficient": false,
+      "pass": true,
+      "better_than_no_convert": true
+    }
+  ],
+  "keep": 0.5,
+  "guard_px": 8.0,
+  "block_px": 64.0,
+  "source": "dump",
+  "all_pass": true
+}

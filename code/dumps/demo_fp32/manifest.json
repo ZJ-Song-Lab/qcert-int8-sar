@@ -1,0 +1,10 @@
+{
+  "source": "dry-run",
+  "impl": "fp32",
+  "n": 12,
+  "delta": null,
+  "zero_point": 0,
+  "nc": 1,
+  "contrast": 1.0,
+  "out": "dumps\\demo_fp32"
+}

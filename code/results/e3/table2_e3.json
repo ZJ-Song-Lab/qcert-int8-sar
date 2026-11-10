@@ -1,0 +1,26 @@
+[
+  {
+    "impl": "INT8 · ACL(板)",
+    "n_scenes": 232,
+    "disagree_vs_fp32": 0.0005808702791461412,
+    "pfa_own": 0.0011863711001642034,
+    "R_vs_fp32": 1.0008620689655172,
+    "bit_exact_rate": 1.0
+  },
+  {
+    "impl": "INT8 · ORT",
+    "n_scenes": 232,
+    "disagree_vs_fp32": 0.0005854885057471265,
+    "pfa_own": 0.0011884236453201969,
+    "R_vs_fp32": 1.0025862068965516,
+    "bit_exact_rate": NaN
+  },
+  {
+    "impl": "FP32",
+    "n_scenes": 232,
+    "disagree_vs_fp32": 0.0,
+    "pfa_own": 0.0011863711001642034,
+    "R_vs_fp32": 1.0,
+    "bit_exact_rate": NaN
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "alpha": 0.001,
+  "power_w": 9.31,
+  "n_frames": 40,
+  "verdicts": {
+    "fp16": {
+      "cand_p90_rough_global": 28.0,
+      "cand_p90_rough_qcert": 9.0,
+      "cand_p90_ratio_global_over_qcert": 3.111111111111111,
+      "pass_cand": true,
+      "pass_dec_ms": true,
+      "j_per_ship_drop": 0.9966183189462349
+    },
+    "int8": {
+      "cand_p90_rough_global": 27.600000000000023,
+      "cand_p90_rough_qcert": 9.0,
+      "cand_p90_ratio_global_over_qcert": 3.066666666666669,
+      "pass_cand": true,
+      "pass_dec_ms": true,
+      "j_per_ship_drop": 0.9205868517828949
+    }
+  },
+  "source": "dump",
+  "note": "板级实测"
+}

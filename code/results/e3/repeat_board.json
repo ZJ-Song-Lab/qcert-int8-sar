@@ -1,0 +1,16 @@
+{
+  "int8_om": {
+    "n": 1000,
+    "n_exact": 1000,
+    "rate": 1.0,
+    "model": "yolo11n_ssdd_int8.om",
+    "img": "000001.jpg"
+  },
+  "fp16_om": {
+    "n": 1000,
+    "n_exact": 1000,
+    "rate": 1.0,
+    "model": "yolo11n_ssdd_fp16.om",
+    "img": "000001.jpg"
+  }
+}
